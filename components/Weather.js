@@ -19,23 +19,23 @@ const Weather = ({ data }) => {
           />
           <p className="text-3xl">{data.weather[0].main}</p>
 
-          <p className="text-lg text-gray-200">{data.weather[0].description}</p>
+          <p className="text-sm text-gray-100">{data.weather[0].description}</p>
         </div>
         <div className="items-center grid grid-cols-1 text-center">
           <p className="text-9xl">{data.main.temp.toFixed(0)}&#176;</p>
           <div className="grid grid-cols-2">
             <div>
-              <p className="font-bold text-lg ">
+              <p className="font-bold text-xl ">
                 {data.main.temp_min.toFixed(1)}&#176;
               </p>
 
-              <p className="text-sm text-gray-200">Min Temp</p>
+              <p className="text-sm text-gray-100">Min Temp</p>
             </div>
             <div>
-              <p className="font-bold text-lg ">
+              <p className="font-bold text-xl ">
                 {data.main.temp_max.toFixed(1)}&#176;
               </p>
-              <p className="text-sm text-gray-200">Max Temp</p>
+              <p className="text-sm text-gray-100">Max Temp</p>
             </div>
           </div>
         </div>
