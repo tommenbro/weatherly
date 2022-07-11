@@ -36,10 +36,10 @@ export default function Home() {
         </Head>
 
         {/* Overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/25 z-[1]" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/20 z-[1]" />
         {/* Background image */}
         <Image
-          className="blur-xs object-cover"
+          className="object-cover"
           src="https://images.unsplash.com/photo-1508012340316-cdf9d309cea0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
           layout="fill"
           alt="Background image"
