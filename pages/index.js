@@ -31,10 +31,7 @@ export default function Home() {
       <div>
         <Head>
           <title>Weatherly</title>
-          <meta
-            name="description"
-            content="Weatherly - Nakkerud Studio, 2022"
-          />
+          <meta name="description" content="Weatherly" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
