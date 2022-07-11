@@ -2,11 +2,15 @@ import React from "react";
 import Image from "next/image";
 
 const Weather = ({ data }) => {
+  const unixTimestamp = data.sys.sunrise;
+  const date = new Date(unixTimestamp * 1e3); // 1e3 === 1000
+
   return (
     <div className="relative flex flex-col justify-between max-w-[500px] w-full h-[90vh] m-auto p-4 text-white z-10">
       {/* Top */}
       <div className="relative flex justify-between pt-12">
         <div className="flex flex-col items-center">
+          <p className="text-md text-white">{date.toLocaleDateString()}</p>
           <Image
             src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
             alt="/"
